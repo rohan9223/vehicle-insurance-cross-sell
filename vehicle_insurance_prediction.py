@@ -20,7 +20,7 @@ print(data.isnull().sum())
 # Handle missing values (if any):
 # For simplicity, here we will drop rows with missing values, but you can impute if needed.
 # Uncomment the line below if you wish to drop rows with missing values:
-# data.dropna(inplace=True)
+ data.dropna(inplace=True)
 
 # 2. Creation of factor variables
 data['Gender'] = data['Gender'].map({'Male': 0, 'Female': 1})
